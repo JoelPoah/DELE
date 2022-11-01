@@ -13,7 +13,7 @@ digraph "Graph" {
 		4
 		rank=same
 		555 [label="Input Units: 4
-Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+Activation: tanh" color=white fontcolor=black fontsize=18 shape=rectangle]
 	}
 	1 -> 5
 	2 -> 5
@@ -58,8 +58,8 @@ Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 	subgraph cluster_1 {
 		color=white
 		rank=same
-		444 [label="Units: 10
-Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+		444 [label="Units: 32 (+22 more)
+Activation: tanh" color=white fontcolor=black fontsize=18 shape=rectangle]
 		5 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		6 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		7 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -174,8 +174,8 @@ Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 	subgraph cluster_2 {
 		color=white
 		rank=same
-		141414 [label="Units: 20 (+10 more)
-Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+		141414 [label="Units: 16 (+6 more)
+Activation: tanh" color=white fontcolor=black fontsize=18 shape=rectangle]
 		15 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		16 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		17 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -267,31 +267,11 @@ Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 	22 -> 32
 	23 -> 32
 	24 -> 32
-	15 -> 33
-	16 -> 33
-	17 -> 33
-	18 -> 33
-	19 -> 33
-	20 -> 33
-	21 -> 33
-	22 -> 33
-	23 -> 33
-	24 -> 33
-	15 -> 34
-	16 -> 34
-	17 -> 34
-	18 -> 34
-	19 -> 34
-	20 -> 34
-	21 -> 34
-	22 -> 34
-	23 -> 34
-	24 -> 34
 	subgraph cluster_3 {
 		color=white
 		rank=same
-		242424 [label="Units: 10
-Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+		242424 [label="Units: 8
+Activation: tanh" color=white fontcolor=black fontsize=18 shape=rectangle]
 		25 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		26 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		27 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
@@ -300,27 +280,23 @@ Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
 		30 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		31 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 		32 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
-		33 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
-		34 [color="#3498db" fontcolor="#3498db" shape=circle style=filled]
 	}
-	25 -> 35
-	26 -> 35
-	27 -> 35
-	28 -> 35
-	29 -> 35
-	30 -> 35
-	31 -> 35
-	32 -> 35
-	33 -> 35
-	34 -> 35
+	25 -> 33
+	26 -> 33
+	27 -> 33
+	28 -> 33
+	29 -> 33
+	30 -> 33
+	31 -> 33
+	32 -> 33
 	subgraph cluster_output {
 		node [color="#2ecc71" fontcolor="#2ecc71" shape=circle style=filled]
-		343434 [label="Output Units: 1
-Activation: relu" color=white fontcolor=black fontsize=18 shape=rectangle]
+		323232 [label="Output Units: 1
+Activation: tanh" color=white fontcolor=black fontsize=18 shape=rectangle]
 		color=white
 		rank=same
 		labeljust=1
-		35 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
+		33 [color="#e74c3c" fontcolor="#e74c3c" shape=circle style=filled]
 	}
 	arrowShape=none
 }
